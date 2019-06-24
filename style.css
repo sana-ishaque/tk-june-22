@@ -1,0 +1,194 @@
+* a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about {
+    background-image: url(tk-june-22-master/images/library-hero.jpg);
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#logo p {
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+}
+
+#logo p:nth-child(1) {
+    font-weight: 500;
+}
+
+#logo p:nth-child(2) {
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0px 50px;
+}
+
+header #nav a {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+header #nav #login, #signup {
+    background-color: #f9903a;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+#signup {
+    background-color: #ff3115;
+}
+
+#welcoming-note {
+    text-align: center;
+    margin-top: 70px;
+}
+
+#welcoming-note p {
+    margin: 0px 0px 5px 0px;
+}
+
+#welcoming-note p:nth-child(1) {
+    font-size: 75px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+}
+
+#welcoming-note p:nth-child(2) {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    margin-top: 0;
+}
+
+#welcoming-note p:nth-child(3) {
+    font-size: 27px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    margin-top: 0;
+}
+
+button{
+    background-color: #043867;
+    border: none;
+    font-size: 26px;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+#articles{
+    display: flex;
+}
+.upcoming-events{
+    background-color: white;
+    max-width: 50%;
+    padding: 25px;
+    text-align: center;
+}
+.upcoming-events>p{
+font-size: 20px;
+font-weight: 500;
+color: #333;
+}
+.ue-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#from-blog{
+    background-color: #faf2c8;
+    max-width: 50%;
+}
+.art-1{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    padding: 12px 15px;
+    background-color: #043867;
+    margin: 0;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    margin-right: 25px;
+}
+.yellow{
+    padding: 12px 18px;
+    background-color: #f6d652;
+}
+.shadow {
+    text-shadow: 1px 1px #d9bf55;
+
+}
+.month{
+    font-size: 20px;
+    margin: 0;
+}
+.date{
+    font-weight: bold;
+    font-size: 34px;
+    margin: 0;
+}
+.initial{
+    text-align: initial;
+}
+.date-two{
+    padding: 12px 18px;
+}
+.underline{
+    color: #043867;
+    text-decoration: underline;
+    margin: 0;
+    font-size: 20px;
+}
+.underline +p{
+    margin: 5px 0px 0px 0px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.u-text{
+    margin: 5px 0 0 0;
+}
+.grey{
+    color: #999;
+}
+#from-blog>p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.blogs{
+    background-color: #faf2c8;
+}
+.btn{
+    font-size: 15px;
+}
+/* ------------------transportation */
+#transportation{
+    background-image: url(tk-june-22-master/images/bus.jpg);
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
