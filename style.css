@@ -54,13 +54,17 @@ header #nav #login, #signup {
     margin-top: 0;
 }
 
+#media-query {
+    display: none;
+}
+
 #signup {
     background-color: #ff3115;
 }
 
 #welcoming-note {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 #welcoming-note button:hover {
@@ -92,6 +96,10 @@ header #nav #login, #signup {
     margin-top: 0;
 }
 
+#find:hover {
+    background-image: linear-gradient(to bottom, #0b539c, #0d3d69);
+}
+
 button {
     background-color: #043867;
     border: none;
@@ -99,7 +107,7 @@ button {
     color: white;
     padding: 15px 28px;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 #articles {
@@ -108,7 +116,7 @@ button {
 
 .upcoming-events {
     background-color: white;
-    max-width: 50%;
+    /* max-width: 50%; */
     padding: 25px;
     text-align: center;
 }
@@ -127,7 +135,7 @@ button {
 
 #from-blog {
     background-color: #faf2c8;
-    max-width: 50%;
+    /* max-width: 50%; */
 }
 
 .art-1 {
@@ -257,7 +265,7 @@ button {
     color: #9e9990;
 }
 
-#black-background {
+.free-offer {
     position: absolute;
     left: 0;
     right: 0;
@@ -271,20 +279,26 @@ button {
     padding: 30px 20px;
 }
 
-#black-background button {
+.free-offer button {
     font-size: 15px;
     padding: 12px 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#black-background p:nth-child(1) {
+.free-offer p:nth-child(1) {
     font-size: 35px;
     margin: 0;
     font-weight: 300;
 }
 
-#black-background p:nth-child(2) {
+.free-offer p:nth-child(2) {
     margin: 10px 0 10px 0px;
     font-size: 14px;
+}
+
+#free-food {
+    display: none;
 }
 
 /* ----------------------footer */
@@ -295,6 +309,7 @@ footer {
     padding: 80px 100px 80px 100px;
     color: #666666;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 h5 {
@@ -303,23 +318,30 @@ h5 {
     font-weight: 500;
     margin-bottom: 10px;
 }
-#column-two, #column-three{
+
+/* #column-two, #column-three {
     margin-right: 100px;
-}
+} */
+
 footer p {
     margin: 0;
 }
 
 footer div {
-    margin-right: 50px;
+    margin: 0 50px 30px 50px;
 }
 
 #column-one>div {
     display: flex;
 }
 
+#fictional-university{
+    margin-bottom: 0;
+}
+
 #column-one>div>p {
     margin-right: 5px;
+    color: #9c9a9d;
 }
 
 .bold {
@@ -332,16 +354,12 @@ footer div {
     font-size: 20px;
 }
 
-.numbers {
-    margin: 5px 0 0 0;
-}
-
 #column-two a {
     display: block;
     margin-bottom: 5px;
     font-size: 13px;
     font-weight: 500;
-    color: #666666;
+    color: #9c9a9d;
 }
 
 #column-three a {
@@ -349,7 +367,7 @@ footer div {
     margin-bottom: 5px;
     font-size: 13px;
     font-weight: 500;
-    color: #666666;
+    color: #9c9a9d;
 }
 
 #column-four a {
@@ -360,6 +378,7 @@ footer div {
     padding: 12px 15px;
     color: white;
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .fa-facebook-f {
@@ -380,4 +399,54 @@ footer div {
 
 .fa-instagram {
     background-color: #ea0064;
+}
+
+@media (max-width: 600px) {
+    #nav {
+        display: none;
+    }
+    #media-query {
+        display: flex;
+    }
+    .fa-bars {
+        margin-right: 20px;
+    }
+    header {
+        padding: 20px 20px 0px 20px;
+    }
+    #articles {
+        flex-direction: column;
+    }
+    footer {
+        text-align: center;
+    }
+    #column-one {
+        margin: 0 100px 0px 100px;
+    }
+    #column-four i {
+        padding: 12px 30px;
+    }
+    #num {
+        justify-content: center;
+    }
+    #free-food {
+        display: flex;
+        flex-direction: column;
+    }
+    #free-trans {
+        display: none;
+    }
+    #transportation {
+        background-image: url(tk-june-22-master/images/apples.jpg);
+    }
+    #circle i:nth-child(1) {
+        color: #9e9990;
+    }
+    #circle i:nth-child(2) {
+        color: white;
+    }
+    
+    #circle i:nth-child(3) {
+        color: #9e9990;
+    }
 }
